@@ -11,10 +11,10 @@ spring:
       maximum-pool-size: 200
       minimum-idle: 100
   rabbitmq:
+    virtual-host: /
+    username: guest
+    password: guest
     host: 192.168.136.130
-    username: /leyou
-    password: leyou
-    virtual-host: /leyou
     template:
       queue: leyou.order.delay.queue
     publisher-confirms: true
